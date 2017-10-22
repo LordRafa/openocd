@@ -20,10 +20,12 @@ noinst_LTLIBRARIES += %D%/libtarget.la
 	$(MIPS32_SRC) \
 	$(NDS32_SRC) \
 	$(INTEL_IA32_SRC) \
+	$(XTENSA_SRC) \
 	%D%/avrt.c \
 	%D%/dsp563xx.c \
 	%D%/dsp563xx_once.c \
 	%D%/dsp5680xx.c \
+	%D%/xtensa.c \
 	%D%/hla_target.c
 
 TARGET_CORE_SRC = \
@@ -117,6 +119,9 @@ INTEL_IA32_SRC = \
 	%D%/quark_d20xx.c \
 	%D%/lakemont.c \
 	%D%/x86_32_common.c
+
+XTENSA_SRC = \
+	%D%/xtensa.c
 
 %C%_libtarget_la_SOURCES += \
 	%D%/algorithm.h \
